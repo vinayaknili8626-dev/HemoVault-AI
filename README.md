@@ -26,16 +26,6 @@ HemoVault AI is a secure web application built using the MERN Stack to replace t
 The system enables patients to securely access their reports, laboratories to upload blood test results, doctors to review patient records, and administrators to manage the entire system through dedicated dashboards.
 
 The goal is to improve accessibility, reduce paperwork, and simplify healthcare record management.
-
----
-## Future Enhancements
-
-- Progressive Web App (PWA) with offline support
-- OCR-based Blood Report Scanner
-- AI-assisted Report Analysis
-- Mobile Application
-- Appointment Scheduling
-- Email Notifications
   
 # 🚨 Problem Statement
 
