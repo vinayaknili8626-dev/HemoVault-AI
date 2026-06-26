@@ -1,16 +1,18 @@
-"Every blood report tells a story. HemoVault AI ensures it is never lost."
-
 # 🩸 HemoVault AI
+
 <div align="center">
 
-### Secure Digital Blood Test Report Management System
+### Digital Blood Test Report Management System
 
-*A modern MERN Stack application for managing blood test reports digitally with secure role-based access for Patients, Doctors, Laboratories, and Administrators.*
+**"Patients often spend valuable time waiting for printed blood test reports before they can begin treatment."**
 
-![React](https://img.shields.io/badge/React-18-blue)
-![Node.js](https://img.shields.io/badge/Node.js-Express-green)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-success)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+A secure MERN Stack application that digitizes blood test reports, enabling patients, laboratories, doctors, and administrators to manage healthcare records efficiently.
+
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-20-339933?logo=node.js)
+![Express](https://img.shields.io/badge/Express.js-Backend-black)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb)
+![JWT](https://img.shields.io/badge/JWT-Authentication-orange)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 </div>
@@ -19,106 +21,151 @@
 
 # 📖 Overview
 
-HemoVault AI is a secure healthcare management platform that digitizes traditional paper-based blood test reports.
+HemoVault AI is a secure web application built using the MERN Stack to replace traditional paper-based blood test reports with a centralized digital platform.
 
-Instead of carrying physical reports, patients can securely access their medical records online. Doctors can efficiently review patient reports, laboratories can upload test results, and administrators can manage the complete healthcare ecosystem through dedicated dashboards.
+The system enables patients to securely access their reports, laboratories to upload blood test results, doctors to review patient records, and administrators to manage the entire system through dedicated dashboards.
 
-The project focuses on improving accessibility, security, organization, and digital healthcare management.
+The goal is to improve accessibility, reduce paperwork, and simplify healthcare record management.
 
 ---
+## Future Enhancements
 
-# 🎯 Problem Statement
-
-Traditional blood test reports present several challenges:
-
-- Paper reports can be lost or damaged.
-- Patients must carry reports during every hospital visit.
-- Doctors cannot easily access previous reports.
-- Laboratories rely on manual report distribution.
-- Waiting for printed blood test reports delays timely access to healthcare.
-- Hospitals struggle with paper record management.
+- Progressive Web App (PWA) with offline support
+- OCR-based Blood Report Scanner
+- AI-assisted Report Analysis
+- Mobile Application
+- Appointment Scheduling
+- Email Notifications
   
+# 🚨 Problem Statement
+
+Patients often spend valuable time waiting for printed blood test reports before they can begin treatment. Paper-based reports are difficult to manage, can be misplaced, and are not easily accessible during emergencies or follow-up consultations.
 
 ---
 
 # 💡 Solution
 
-HemoVault AI provides a centralized digital platform where:
+HemoVault AI provides a secure digital platform that allows:
 
-- Patients securely store medical reports.
-- Laboratories upload blood test reports.
-- Doctors access patient history.
-- Administrators manage users and system activities.
-
-This eliminates paperwork while improving efficiency and accessibility.
+* Patients to access blood reports anytime.
+* Laboratories to upload reports digitally.
+* Doctors to review patient history efficiently.
+* Administrators to manage users and medical records.
 
 ---
 
-# ✨ Key Features
+# ✨ Features
 
-## 👤 Patient Module
+### 👤 Patient
 
-- Secure Registration & Login
-- Personal Dashboard
-- View Blood Test Reports
-- Download Reports
-- Health Timeline
-- Profile Management
+* Secure Registration & Login
+* Personal Dashboard
+* View Blood Reports
+* Download Reports
+* Profile Management
 
----
+### 🧪 Laboratory
 
-## 🩺 Doctor Module
+* Laboratory Dashboard
+* Upload Blood Reports
+* Manage Patient Reports
 
-- Doctor Dashboard
-- Patient Directory
-- Patient Report History
-- Medical Record Access
+### 🩺 Doctor
 
----
+* Doctor Dashboard
+* Access Patient Reports
+* Review Medical History
 
-## 🧪 Laboratory Module
+### 🛡 Administrator
 
-- Laboratory Dashboard
-- Upload Blood Reports
-- Manage Patient Reports
-- View Uploaded Reports
-
----
-
-## 🛡 Administrator Module
-
-- Admin Dashboard
-- User Management
-- Audit Logs
-- System Monitoring
+* Admin Dashboard
+* User Management
+* Report Management
+* Audit Logs
 
 ---
 
 # 🔐 Security Features
 
-- JWT Authentication
-- Password Encryption
-- Protected Routes
-- Role-Based Access Control
-- Secure MongoDB Database
-- Environment Variable Protection
+* JWT Authentication
+* Password Encryption
+* Protected Routes
+* Role-Based Access Control
+* Secure MongoDB Storage
+* Environment Variable Configuration
 
 ---
 
-# 🌐 User Roles
+# 🏗 System Architecture
 
-| Role | Permissions |
-|-------|------------|
-| Patient | View & Download Reports |
-| Doctor | Access Patient Records |
-| Laboratory | Upload Blood Reports |
-| Administrator | Manage Complete System |
+```text
+                Browser
+                    │
+            React + Vite Frontend
+                    │
+              REST API (Express)
+                    │
+              Node.js Backend
+                    │
+                 MongoDB
+```
+
+---
+
+# 🔄 Application Workflow
+
+```text
+Patient Registration
+        │
+        ▼
+Secure Login
+        │
+        ▼
+Laboratory Uploads Report
+        │
+        ▼
+Doctor Reviews Report
+        │
+        ▼
+Patient Views & Downloads Report
+```
+
+---
+
+# 💻 Technology Stack
+
+## Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* React Router
+* Axios
+
+## Backend
+
+* Node.js
+* Express.js
+
+## Database
+
+* MongoDB
+* Mongoose
+
+## Authentication
+
+* JWT
+
+## Version Control
+
+* Git
+* GitHub
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 HemoVault-AI
 │
 ├── backend
@@ -127,81 +174,29 @@ HemoVault-AI
 │   ├── middleware
 │   ├── models
 │   ├── routes
-│   ├── utils
 │   └── server.js
 │
 ├── frontend
 │   ├── public
 │   ├── src
 │   │   ├── components
-│   │   ├── context
 │   │   ├── pages
 │   │   ├── services
 │   │   └── App.jsx
 │
-├── docker-compose.yml
 ├── README.md
 └── .gitignore
 ```
 
 ---
 
-# 💻 Tech Stack
-
-## Frontend
-
-- React.js
-- Vite
-- Tailwind CSS
-- React Router
-- Axios
-
-## Backend
-
-- Node.js
-- Express.js
-
-## Database
-
-- MongoDB
-- Mongoose
-
-## Authentication
-
-- JWT Authentication
-
-## Version Control
-
-- Git
-- GitHub
-
----
-
-# 📱 Responsive Design
-
-The application is designed to work across multiple devices:
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile
-
----
-
-# 🌐 Offline Ready
-
-The project is designed with future support for offline healthcare accessibility.
-
-Planned improvements include:
-
-- Offline report viewing
-- Local data caching
-- Automatic synchronization
-- Progressive Web App (PWA) support
-
----
-
 # 🚀 Installation
+
+## Prerequisites
+
+* Node.js
+* MongoDB
+* Git
 
 ## Clone Repository
 
@@ -209,15 +204,7 @@ Planned improvements include:
 git clone https://github.com/vinayaknili18626-dev/HemoVault-AI.git
 ```
 
-## Navigate
-
-```bash
-cd HemoVault-AI
-```
-
----
-
-## Backend Setup
+## Backend
 
 ```bash
 cd backend
@@ -225,9 +212,7 @@ npm install
 npm run dev
 ```
 
----
-
-## Frontend Setup
+## Frontend
 
 ```bash
 cd frontend
@@ -239,17 +224,15 @@ npm run dev
 
 # ⚙ Environment Variables
 
-Backend `.env`
+### Backend (.env)
 
 ```env
 PORT=5000
-
 MONGO_URI=your_mongodb_connection_string
-
 JWT_SECRET=your_secret_key
 ```
 
-Frontend `.env`
+### Frontend (.env)
 
 ```env
 VITE_API_URL=http://localhost:5000
@@ -259,41 +242,39 @@ VITE_API_URL=http://localhost:5000
 
 # 📸 Screenshots
 
-Include screenshots of:
+Add screenshots of:
 
-- Landing Page
-- Login Page
-- Patient Dashboard
-- Doctor Dashboard
-- Laboratory Dashboard
-- Admin Dashboard
-- Upload Report Page
-
----
-
-# 🔮 Future Enhancements
-
-- AI-powered Blood Report Analysis
-- OCR Report Scanner
-- Email Notifications
-- Mobile Application
-- Appointment Management
-- Telemedicine Integration
-- Advanced Health Analytics
-- Progressive Web App Support
-- Offline Synchronization
-- Multi-language Support
+* Home Page
+* Login Page
+* Registration Page
+* Patient Dashboard
+* Doctor Dashboard
+* Laboratory Dashboard
+* Admin Dashboard
+* Blood Report Upload Page
 
 ---
 
 # 🎯 Project Objectives
 
-- Digitize blood test reports
-- Improve healthcare accessibility
-- Reduce paper-based documentation
-- Simplify report management
-- Provide secure medical record storage
-- Enable role-based healthcare management
+* Digitize blood test reports.
+* Reduce dependency on paper records.
+* Improve accessibility of medical information.
+* Enable secure healthcare data management.
+* Simplify report sharing between patients and healthcare providers.
+
+---
+
+# 🔮 Future Enhancements
+
+* OCR-based Blood Report Scanner
+* AI-assisted Report Analysis
+* Email Notifications
+* Mobile Application
+* Appointment Scheduling
+* Progressive Web App (PWA)
+* Offline Report Access
+* Multi-language Support
 
 ---
 
@@ -301,25 +282,23 @@ Include screenshots of:
 
 Contributions are welcome.
 
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Push to your branch
-5. Open a Pull Request
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push to your branch.
+5. Open a Pull Request.
 
 ---
 
 # 👨‍💻 Author
 
-## Vinayak Nili
+### Vinayak Nili
 
 **B.Tech Computer Science Engineering**
 
-Healthcare Software Development • MERN Stack • Full Stack Development
+**Full Stack Developer • MERN Stack • Java**
 
-GitHub:
-
-https://github.com/vinayaknili8626-dev
+GitHub: https://github.com/vinayaknili8626-dev
 
 ---
 
@@ -331,8 +310,8 @@ This project is licensed under the MIT License.
 
 <div align="center">
 
-## ❤️ Building Better Healthcare Through Technology
+### ❤️ Building Better Digital Healthcare Through Technology
 
-**If you found this project helpful, please consider giving it a ⭐ on GitHub.**
+**⭐ If you found this project helpful, consider giving it a Star on GitHub.**
 
 </div>
