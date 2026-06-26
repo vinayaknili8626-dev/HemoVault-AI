@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  db:
+    image: mongo:latest
+    container_name: hemovault_db
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    build: ./backend
+    container_name: hemovault_backend
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGO_URI=mongodb://db:27017/hemovault
+      - JWT_SECRET=supersecretjwttokenforhemovaultaiapp1234!
+      - JWT_EXPIRE=30d
+      - NODE_ENV=production
+      - FRONTEND_URL=http://localhost:5173
+    volumes:
+      - ./backend/uploads:/app/uploads
+    depends_on:
+      - db
+
+  frontend:
+    build: ./frontend
+    container_name: hemovault_frontend
+    restart: always
+    ports:
+      - "5173:5173"
+    environment:
+      - BACKEND_URL=http://backend:5000
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:
