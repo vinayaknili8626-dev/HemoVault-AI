@@ -1,7 +1,11 @@
 # 🩸 HemoVault AI
 
 <div align="center">
+## 🎥 Project Demo
 
+Watch the complete project demonstration here:
+
+**▶️ https://youtu.be/DHl_9Apwuc4**
 ### Digital Blood Test Report Management System
 
 **"Patients often spend valuable time waiting for printed blood test reports before they can begin treatment."**
@@ -227,21 +231,6 @@ JWT_SECRET=your_secret_key
 ```env
 VITE_API_URL=http://localhost:5000
 ```
-
----
-
-# 📸 Screenshots
-
-Add screenshots of:
-
-* Home Page
-* Login Page
-* Registration Page
-* Patient Dashboard
-* Doctor Dashboard
-* Laboratory Dashboard
-* Admin Dashboard
-* Blood Report Upload Page
 
 ---
 
