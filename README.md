@@ -1,7 +1,7 @@
 # 🩸 HemoVault AI
 
 <div align="center">
-## 🎥 Project Demo
+# 🎥 Project Demo
 
 Watch the complete project demonstration here:
 
